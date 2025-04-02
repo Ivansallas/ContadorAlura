@@ -33,18 +33,27 @@ body{
 .titulo-principal span{
     color: var(--verde);
 }
-.botoes{
-    font-family: 'Courier New', Courier, monospace;
-    background-color: var(--botao-ativo);
-    color: var(--branca);
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    font-size: 18px;
-    align-items: center;
-    width: 100%;
-    border-bottom: 4px solid var(--botao-ativo);
-    border-left: 2px solid var;
+.botao {
+  font-family: 'bebas neue', sans-serif;
+  background-color: var(--botao-inativo);
+  color: var(--branco);
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  font-size: 18px;
+  align-items: center;
+  width: 100%;
+  border-bottom: 4px solid var(--botao-ativo);
+  border-left: 2px solid var(--botao-ativo);
+  border-right: 2px solid var(--botao-ativo);
+  border-top: none;
+}
 
+.botao:first-child {
+  border-radius: 40px 40px 0 0;
+}
+
+.botoes {
+  display: block;
 }
 
