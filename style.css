@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --cor-de-fundo: #1e1e1e;
+    --verde: #19ee06;
+    --branca: #f3e8e8;
+    --botao-ativo: #121212;
+    --botao-inativo: rgba(58,55,94,0.5);
+    --texto-fundo: rgba(58,55,94,0.3);
+
+}
+body{
+     font-family: 'bebas neue', sans-serif;
+     background-color: var(--cor-de-fundo);
+     color: var(--branca);
+}
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.titulo-principal{
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+.titulo-principal span{
+    color: var(--verde);
+}
+.botoes{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--botao-ativo);
+    color: var(--branca);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var;
+
+}
+
