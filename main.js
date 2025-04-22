@@ -12,7 +12,7 @@ for (let i = 0; i < botoes.length; i++) {
     }
     // Adiciona a classe ativo ao botão clicado
     botoes[i].classList.add("ativo");
-
+    
     // Remove a classe ativo de todas as abas
     for (let j = 0; j < abasConteudo.length; j++) {
       abasConteudo[j].classList.remove("ativo");
@@ -21,3 +21,8 @@ for (let i = 0; i < botoes.length; i++) {
     abasConteudo[i].classList.add("ativo");
   };
 }
+const contadores = document.querySelectorAll(".contador");
+const tempoObjetivo1 = new Date("2023-10-05T00:00:00");
+let tempoAtual = new Date();
+
+contadores[0].textContent = tempoObjetivo1 - tempoAtual;

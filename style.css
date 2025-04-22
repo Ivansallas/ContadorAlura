@@ -6,7 +6,7 @@
     --branco: #FFFFFF;
     --botao-ativo: #3A375E;
     --botao-inativo: rgba(58, 55, 94, 0.5);
-    --texto-fundo: rgba(58, 55, 94, 0.3);
+    --texto-fundo: rgba(58, 55, 94, 0.5);
 }
 
 body {
@@ -60,7 +60,6 @@ body {
 }
 
 .ativo {
-    background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
 }
 
