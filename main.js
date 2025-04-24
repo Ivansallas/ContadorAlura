@@ -3,6 +3,8 @@ const abasConteudo = document.querySelectorAll(".aba-conteudo");
 
 // Mostrar a primeira aba por padrão
 abasConteudo[0].classList.add("ativo");
+botoes[0].classList.add("ativo");
+
 
 for (let i = 0; i < botoes.length; i++) {
   botoes[i].onclick = function () {
@@ -42,4 +44,5 @@ function calculaTempo(tempoObjetivo) {
   // Formata os valores para sempre ter dois dígitos com template literals 
   return `${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos restantes até o evento.`;
 }
+
     

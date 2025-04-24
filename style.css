@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: 'bebas neue', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     background-color: var(--cor-de-fundo);
     color: var(--branco); /* Corrigido aqui */
 }
@@ -36,7 +36,7 @@ body {
 }
 
 .botao {
-    font-family: 'bebas neue', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -59,10 +59,6 @@ body {
     display: block;
 }
 
-.ativo {
-    /* background-color: var(--botao-ativo); */
-    border-bottom: 4px solid var(--verde);
-}
 
 .abas-textos {
     background-color: var(--texto-fundo);
@@ -73,7 +69,13 @@ body {
 .botao.ativo {
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
+    box-shadow: 0px 2px 10px rgba(0, 255, 0, 0.2);
 }
+.botao, .botao.ativo {
+    transition: all 0.3s ease-in-out;
+}
+
+
 
 .aba-conteudo.ativo {
     display: block;
