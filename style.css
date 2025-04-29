@@ -63,10 +63,6 @@ body {
     font-size: 20px;
 }
 
-.ativo {
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
-}
 
 .abas-textos {
     background-color: var(--texto-fundo);
