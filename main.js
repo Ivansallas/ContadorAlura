@@ -60,7 +60,12 @@ function atualizaCronometro() {
     contadores[i].textContent = calculaTempo(tempos[i]);
   }
 }
-atualizaCronometro(); // Atualiza imediatamente
-setInterval(atualizaCronometro, 1000); // Atualiza a cada segundo
+
+function comecaCronometro() { 
+  atualizaCronometro(); // Atualiza imediatamente
+  setInterval(atualizaCronometro, 1000); // Atualiza a cada segundo 
+}
+
+//comecaCronometro(); // Inicia o cronômetro
   
   
