@@ -45,17 +45,24 @@ function calculaTempo(tempoObjetivo) {
 
   if (tempoFinal > 0) {
     // Formata os valores para sempre ter dois dígitos com template literals
-    return `${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos restantes até o evento.`;
+    return [dias, horas, minutos, segundos];
   } else {
-    return "O evento já encerrou!";
+    return [0,0,0,0];
   }
 }
 
 // Atualiza os contadores a cada segundo
 function atualizaCronometro() {
+  document.getElementById("horas0").textContent = calculaTempo(tempos[0])[1];
+  document.getElementById("min0").textContent = calculaTempo(tempos[0])[2];
+  document.getElementById("seg0").textContent = calculaTempo(tempos[0])[3];
   for (let i = 0; i < contadores.length; i++) {
-    contadores[i].textContent = calculaTempo(tempos[i]);
+    document.getElementById("dias0").textContent = calculaTempo(tempos[0])[i];
+    //contadores[i].textContent = calculaTempo(tempos[i]);
   }
 }
-atualizaCronometro(); // Atualiza imediatamente
-setInterval(atualizaCronometro, 1000); // Atualiza a cada segundo
+function comecaCronometro() {
+  atualizaCronometro(); // Atualiza imediatamente
+  setInterval(atualizaCronometro, 1000); // Atualiza a cada segundo
+}
+comecaCronometro(); // Inicia o cronômetro
