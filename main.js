@@ -23,10 +23,18 @@ for (let i = 0; i < botoes.length; i++) {
   };
 }
 const contadores = document.querySelectorAll(".contador");
-const tempoObjetivo1 = new Date("2025-08-05T00:00:00");
-const tempoObjetivo2 = new Date("2025-01-05T00:00:00");
-const tempoObjetivo3 = new Date("2025-09-05T00:00:00");
-const tempoObjetivo4 = new Date("2025-10-05T00:00:00");
+const tempoObjetivo1 = new Date("2025-12-01T00:00:00");
+const tempoObjetivo2 = new Date("2028-01-05T00:00:00");
+const tempoObjetivo3 = new Date("2026-09-05T00:00:00");
+const tempoObjetivo4 = new Date("2029-10-05T00:00:00");
+
+// Atualiza o ano atual em todos os elementos com a classe "ano"
+const anoAtual = document.querySelectorAll(".ano");
+const agoraAtual = new Date();
+anoAtual.forEach(el => {
+  el.textContent = agoraAtual.getFullYear();
+});
+
 
 // Adiciona os tempos objetivos em um lista para facilitar o loop
 const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];
